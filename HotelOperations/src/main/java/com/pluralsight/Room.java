@@ -7,6 +7,13 @@ public class Room {
     private boolean occupied;
     private boolean dirty;
 
+    public Room(int numberOfBeds, float price){
+        this.numberOfBeds=numberOfBeds;
+        this.price=price;
+        this.occupied=false;
+        this.dirty=false;
+    }
+
     public Room(int numberOfBeds, float price, boolean occupied, boolean dirty) {
         this.numberOfBeds = numberOfBeds;
         this.price = price;
